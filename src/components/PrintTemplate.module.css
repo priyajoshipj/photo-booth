@@ -1,0 +1,36 @@
+.printTemplate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  display: none;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  height: 100%;
+}
+
+.photoFrame {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.printedPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media print {
+  .printTemplate {
+    display: block;
+  }
+}

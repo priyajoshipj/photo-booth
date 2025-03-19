@@ -1,0 +1,69 @@
+/* Move existing styles here and update class names to use camelCase */
+
+.photoBooth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #2c3e50;
+  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 400px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .photoBooth {
+    margin: 0;
+    border-radius: 0;
+    min-height: calc(100vh - 4rem);
+  }
+}
+
+@media print {
+  .leftSection {
+    display: none;
+  }
+}

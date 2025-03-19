@@ -1,0 +1,36 @@
+.patternSelector {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.patternBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.patternBtn.selected {
+  border-color: #3498db;
+  background: #ebf5fb;
+}
+
+.patternIcon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.patternName {
+  font-size: 12px;
+}
+
+.patternBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
