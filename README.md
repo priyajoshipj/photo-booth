@@ -1,12 +1,58 @@
-# React + Vite
+# 📸 Photo Booth Collage Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web application that allows users to create fun photo collages using their device's camera. Take four photos in sequence and arrange them in beautiful layouts.
 
-Currently, two official plugins are available:
+## 🛠️ System Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js version 18 or higher
+- npm version 9 or higher
+- Modern web browser with camera access (Chrome, Firefox, Safari)
 
-## Expanding the ESLint configuration
+## 📋 Prerequisites
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install Node Version Manager (nvm)**
+   ```bash
+   # For macOS/Linux
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+   # For Windows
+   # Download nvm-windows from: https://github.com/coreybutler/nvm-windows/releases
+   ```
+
+2. **Install and Use Node.js 18**
+   ```bash
+   # Install Node.js 18
+   nvm install 18
+
+   # Use Node.js 18
+   nvm use 18
+
+   # Verify installation
+   node --version  # Should show v18.x.x
+   npm --version   # Should show 9.x.x
+   ```
+
+## 🚀 Installation Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/photo-booth-collage.git
+   cd photo-booth-collage
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the Application**
+   - Open your browser
+   - Visit: `http://localhost:5173`
+   - Allow camera access when prompted
+
+## 📦 Dependencies
